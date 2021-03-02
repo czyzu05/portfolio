@@ -3,3 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #10121B;
+}
