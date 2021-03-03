@@ -15,6 +15,7 @@ const HamburgerWrapper = styled.div`
   transition: all 0.4s ease-out;
   transform: translateX(${({ isOpen }) => (isOpen ? "23rem" : "0")});
   display: none;
+  z-index: 10;
 
   @media screen and (max-width: 1200px) {
     display: block;
@@ -24,6 +25,10 @@ const HamburgerWrapper = styled.div`
 const HamburgerIcon = styled(FaBars)`
   color: white;
   font-size: 5rem;
+
+  @media screen and (max-width: 700px) {
+    font-size: 4rem;
+  }
 `;
 
 export default HamburgerMenu;

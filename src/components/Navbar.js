@@ -38,6 +38,7 @@ const Nav = styled.nav`
   border-right: 1px solid #2e344e;
   transform: translateX(0);
   transition: all 0.4s ease-out;
+  z-index: 10;
 
   @media screen and (max-width: 1200px) {
     width: 23rem;

@@ -18,3 +18,12 @@ body {
   height: 100vh;
   background-color: #10121B;
 }
+
+#tsparticles {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: -1;
+}
