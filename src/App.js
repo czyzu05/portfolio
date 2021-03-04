@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import Home from "./views/Home";
+import About from "./views/About";
 import HamburgerMenu from "./components/HamburgerMenu";
 
 const App = () => {
@@ -17,8 +18,11 @@ const App = () => {
         <HamburgerMenu toggle={toggle} isOpen={isOpen} />
         <Navbar isOpen={isOpen} />
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
       </div>

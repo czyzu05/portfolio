@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Particles from "react-particles-js";
 import Typed from "react-typed";
-import Button from "./Button";
+import Button from "../components/Button";
+import Container from "../components/Container";
 import { particlesConfig } from "../config/particle-config";
 
 const Home = () => {
@@ -30,22 +31,9 @@ const Home = () => {
   );
 };
 
-const HomeContainer = styled.div`
-  position: relative;
-  margin-left: 30rem;
-  width: calc(100vw - 30rem);
-  min-height: 100vh;
-  z-index: 2;
-
-  display: flex;
-  flex-direction: column;
+const HomeContainer = styled(Container)`
   align-items: center;
   justify-content: center;
-
-  @media screen and (max-width: 1200px) {
-    margin-left: 0;
-    width: 100%;
-  }
 `;
 
 const Title = styled.h1`
