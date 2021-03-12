@@ -1,12 +1,13 @@
 import React from "react";
-import styled from "styled-components";
 import Container from "../components/Container";
-import AboutMe from '../components/AboutMe'
+import AboutMe from "../components/AboutMe";
+import Services from "../components/Services";
 
 const About = () => {
   return (
     <Container>
       <AboutMe />
+      <Services />
     </Container>
   );
 };

@@ -4,26 +4,47 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
 }
 
+#root {
+  width: calc(100vw - (100vw - 100%));
+  overflow: hidden;
+}
+
 .app {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
-  background-color: #10121B;
+  background-color: #10121b;
 }
 
 #tsparticles {
   height: 100%;
   width: 100%;
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   z-index: -1;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  width: 5px;
+  background-color: #383838;
+  border: 5px solid #383838;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6b6b6b;
+  border-radius: 3px;
 }
