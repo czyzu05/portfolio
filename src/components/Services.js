@@ -1,10 +1,17 @@
+import { servicesData } from "../data/servicesData";
+import ServicesElement from "./ServicesElement";
 import styled from "styled-components";
 import Title from "./Title";
 
 const Services = () => {
+  const services = servicesData.map((item) => (
+    <ServicesElement key={item.title} {...item} />
+  ));
+
   return (
     <Container>
       <Title>Services</Title>
+      <FlexContainer>{services}</FlexContainer>
     </Container>
   );
 };
@@ -31,6 +38,12 @@ const Container = styled.div`
   @media screen and (max-width: 321px) {
     max-width: 100%;
   }
+`;
+
+const FlexContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 `;
 
 export default Services;
