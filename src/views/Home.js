@@ -26,7 +26,7 @@ const Home = () => {
           loop
         />
       </SubTitle>
-      <Button>Contact me</Button>
+      <Button to="/contact">Contact me</Button>
     </HomeContainer>
   );
 };

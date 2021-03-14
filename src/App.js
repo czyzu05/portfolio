@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./views/Home";
 import About from "./views/About";
 import HamburgerMenu from "./components/HamburgerMenu";
+import Contact from "./views/Contact";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,9 @@ const App = () => {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
         </Switch>
       </div>

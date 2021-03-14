@@ -1,6 +1,11 @@
+import {Link} from 'react-router-dom'
 import styled from "styled-components";
 
-const Button = styled.button`
+const Button = styled(Link)`
+  display: block;
+  text-decoration: none;
+  width: 20rem;
+  text-align: center;
   margin-top: 38px;
   padding: 18px 25px;
   color: #fff;
