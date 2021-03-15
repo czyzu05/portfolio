@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "emailjs-com";
 import styled from "styled-components";
 
 const ContactForm = () => {
@@ -6,6 +9,31 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [msg, setMsg] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0mf7sxd",
+        "template_gsidcpt",
+        e.target,
+        "user_sldiMKMrLNLyTYvBftFn7"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+          setName("");
+          setEmail("");
+          setSubject("");
+          setMsg("");
+          notify();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   const handleInputName = (e) => {
     setName(e.target.value);
@@ -20,15 +48,28 @@ const ContactForm = () => {
     setMsg(e.target.value);
   };
 
+  const notify = () => {
+    toast.success("Message was sent!", {
+      position: toast.POSITION.TOP_CENTER,
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
   return (
     <Container>
       <Paragraph>Get In Touch</Paragraph>
       <FormContainer>
-        <Form>
+        <Form onSubmit={sendEmail}>
           <Label>
             <Input
               type="text"
               required
+              name="name"
               value={name}
               onChange={handleInputName}
             />
@@ -36,8 +77,9 @@ const ContactForm = () => {
           </Label>
           <Label>
             <Input
-              type="text"
+              type="email"
               required
+              name="email"
               value={email}
               onChange={handleInputEmail}
             />
@@ -46,6 +88,7 @@ const ContactForm = () => {
           <Label>
             <Input
               type="text"
+              name="subject"
               required
               value={subject}
               onChange={handleInputSubject}
@@ -53,17 +96,30 @@ const ContactForm = () => {
             <Placeholder>Enter Your Subject</Placeholder>
           </Label>
           <Label>
-            <TextArea value={msg} onChange={handleInputMsg} />
+            <TextArea value={msg} onChange={handleInputMsg} name="message" />
             <Placeholder>Enter Your Message</Placeholder>
           </Label>
           <SubmitButton type="submit">Send Mail</SubmitButton>
         </Form>
+        <ToastContainer
+          position="top-center"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
       </FormContainer>
     </Container>
   );
 };
 
-const Container = styled.div``;
+const Container = styled.div`
+  flex: 1;
+`;
 const Paragraph = styled.p`
   font-size: 2rem;
   color: #fff;
