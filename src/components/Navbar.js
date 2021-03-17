@@ -1,20 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { menuData } from "../data/menuData";
 import styled from "styled-components";
-import avatar from '../images/avatar.png'
+import avatar from "../images/avatar.png";
 
 const Navbar = ({ isOpen }) => {
   return (
     <Nav isOpen={isOpen}>
       <NavContainer>
         <NavImageContainer>
-          <NavImg/>
+          <NavImg />
         </NavImageContainer>
 
         <NavMenuContainer>
           {menuData.map((item, index) => (
-            <NavMenuLink to={item.path} key={index}>
+            <NavMenuLink to={item.path} exact key={index}>
               {item.title}
             </NavMenuLink>
           ))}
@@ -91,13 +91,48 @@ const NavMenuContainer = styled.div`
   justify-content: center;
 `;
 
-const NavMenuLink = styled(Link)`
+const NavMenuLink = styled(NavLink)`
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
   color: #a4acc4;
   text-decoration: none;
   cursor: pointer;
   padding: 1rem 0;
-  font-size: 2rem;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
   text-transform: uppercase;
+
+  &.active {
+    background-color: #037fff;
+    color: #fff;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    height: 100%;
+    width: 0;
+    background: rgba(3, 127, 255, 0.2);
+    visibility: hidden;
+    transition: all 0.4s ease-out;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #037fff;
+    &::before {
+      width: 100%;
+      visibility: visible;
+    }
+    &.active {
+      color: #fff;
+    }
+  }
 `;
 
 const NavFooterContainer = styled.div`

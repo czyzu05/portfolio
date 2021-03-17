@@ -35,7 +35,7 @@ const AboutMe = () => {
               <b>Languages</b> Polish, English
             </li>
           </ul>
-          <Button>Download CV</Button>
+          <Button to='/CV-Damian-Czyz.pdf' target="_blank" download>Download CV</Button>
         </Information>
       </MainSection>
     </SectionContainer>
