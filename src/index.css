@@ -48,3 +48,32 @@ body {
   background-color: #6b6b6b;
   border-radius: 3px;
 }
+
+.vertical-timeline {
+  margin-top: 100px !important;
+}
+
+.vertical-timeline-element-content {
+  background: #191d2b !important;
+  color: #a4acc4;
+  box-shadow: 0 3px 0 #97acc4 !important;
+}
+.vertical-timeline::before {
+  background: #191d2b !important;
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #191d2b !important;
+}
+
+.vertical-timeline-element-date {
+  top: 16px !important;
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid #191d2b !important;
+}
+
+h2 {
+  font-size: 2rem;
+}

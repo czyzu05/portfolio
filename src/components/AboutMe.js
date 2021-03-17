@@ -32,7 +32,7 @@ const AboutMe = () => {
               <b>Location</b> Cracow, Poland
             </li>
             <li>
-              <b>Languages</b> Example text
+              <b>Languages</b> Polish, English
             </li>
           </ul>
           <Button>Download CV</Button>

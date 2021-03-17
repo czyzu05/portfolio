@@ -6,6 +6,7 @@ import About from "./views/About";
 import HamburgerMenu from "./components/HamburgerMenu";
 import Contact from "./views/Contact";
 import Projects from "./views/Projects";
+import Resume from "./views/Resume";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,6 +32,9 @@ const App = () => {
           </Route>
           <Route exact path="/projects">
             <Projects />
+          </Route>
+          <Route exact path="/resume">
+            <Resume />
           </Route>
         </Switch>
       </div>
