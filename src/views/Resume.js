@@ -6,6 +6,7 @@ import SectionContainer from "../components/SectionContainer";
 import Title from "../components/Title";
 import SkillElement from "../components/SkillElement";
 import Timeline from "../components/Timeline";
+import Certificates from '../components/Certificates'
 
 const Resume = () => {
   const skills = skillsData.map((skill) => (
@@ -19,6 +20,8 @@ const Resume = () => {
         <SkillsSection>{skills}</SkillsSection>
         <Title>Education</Title>
         <Timeline />
+        <Title>Certificates</Title>
+        <Certificates />
       </SectionContainer>
     </Container>
   );
