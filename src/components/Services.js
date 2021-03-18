@@ -20,7 +20,15 @@ const Services = () => {
 const FlexContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 50px;
+
+  @media screen and (max-width: 805px) {
+    justify-content: space-evenly;
+  }
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+  }
 `;
 
 export default Services;

@@ -6,7 +6,7 @@ import SectionContainer from "../components/SectionContainer";
 import Title from "../components/Title";
 import SkillElement from "../components/SkillElement";
 import Timeline from "../components/Timeline";
-import Certificates from '../components/Certificates'
+import Certificates from "../components/Certificates";
 
 const Resume = () => {
   const skills = skillsData.map((skill) => (
@@ -19,7 +19,9 @@ const Resume = () => {
         <Title>My skills</Title>
         <SkillsSection>{skills}</SkillsSection>
         <Title>Education</Title>
-        <Timeline />
+        <TimelineContainer>
+          <Timeline />
+        </TimelineContainer>
         <Title>Certificates</Title>
         <Certificates />
       </SectionContainer>
@@ -35,6 +37,27 @@ const SkillsSection = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 860px) {
+    justify-content: space-evenly;
+  }
+  @media screen and (max-width: 600px) {
+    margin-bottom: 5rem;
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 350px) {
+    margin-bottom: 5rem;
+    margin-top: 0px;
+  }
+`;
+
+const TimelineContainer = styled.div`
+@media screen and (max-width: 600px) {
+  margin-top: -50px;
+}
+  @media screen and (max-width: 400px) {
+    margin-top: -100px;
+  }
 `;
 
 export default Resume;

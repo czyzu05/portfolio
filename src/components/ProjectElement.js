@@ -35,6 +35,27 @@ const Wrapper = styled.div`
   height: 57rem;
   border: 1px solid #2e344e;
   padding: 45px;
+
+  @media screen and (max-width: 1450px) {
+    padding: 25px;
+    flex-basis: calc(53% - 100px);
+  }
+  @media screen and (max-width: 840px) {
+    padding: 35px;
+    flex-basis: calc(70% - 100px);
+  }
+  @media screen and (max-width: 770px) {
+    padding: 35px;
+    flex-basis: 80%;
+  }
+  @media screen and (max-width: 590px) {
+    padding: 25px;
+    flex-basis: 90%;
+  }
+  @media screen and (max-width: 450px) {
+    padding: 15px;
+    flex-basis: 100%;
+  }
 `;
 
 const InformationContainer = styled.div`
@@ -49,6 +70,20 @@ const Image = styled.img`
   height: 25rem;
 
   border-radius: 3px;
+  @media screen and (max-width: 1300px) {
+    width: 90%;
+    height: 20rem;
+  }
+
+  @media screen and (max-width: 850px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 400px) {
+    height: 15rem;
+  }
+  @media screen and (max-width: 365px) {
+    height: 10rem;
+  }
 `;
 const ImgWrap = styled.figure`
   width: 95%;
@@ -56,6 +91,20 @@ const ImgWrap = styled.figure`
   position: relative;
   cursor: pointer;
   overflow: hidden;
+
+  @media screen and (max-width: 1300px) {
+    width: 80%;
+    height: 20rem;
+  }
+  @media screen and (max-width: 850px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 400px) {
+    height: 15rem;
+  }
+  @media screen and (max-width: 365px) {
+    height: 10rem;
+  }
 `;
 const ImgIcons = styled.figcaption`
   position: absolute;
@@ -132,17 +181,33 @@ const Title = styled.h2`
   color: #fff;
   padding-top: 15px;
   font-weight: 400;
+
+  @media screen and (max-width: 450px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const Description = styled.p`
   padding: 20px;
   color: #a4acc4;
   text-align: justify;
+  @media screen and (max-width: 450px) {
+    font-size: 1.4rem;
+  }
+  @media screen and (max-width: 365px) {
+    font-size: 1rem;
+  }
 `;
 
 const Technologies = styled.p`
   padding-top: 10px;
   color: #a4acc4;
+  @media screen and (max-width: 450px) {
+    font-size: 1.4rem;
+  }
+  @media screen and (max-width: 365px) {
+    font-size: 1rem;
+  }
 `;
 
 export default ProjectElement;

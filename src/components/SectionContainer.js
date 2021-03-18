@@ -11,16 +11,17 @@ const SectionContainer = styled.div`
     max-width: 1200px;
   }
   @media screen and (max-width: 801px) {
-    max-width: 600px;
+    max-width: 700px;
   }
   @media screen and (max-width: 601px) {
     max-width: 450px;
   }
   @media screen and (max-width: 451px) {
-    max-width: 320px;
+    max-width: 420px;
   }
   @media screen and (max-width: 321px) {
     max-width: 100%;
+    padding-left: 15px;
   }
 `;
 

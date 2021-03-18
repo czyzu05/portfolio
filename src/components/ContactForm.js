@@ -119,6 +119,10 @@ const ContactForm = () => {
 
 const Container = styled.div`
   flex: 1;
+
+  @media screen and (max-width: 800px) {
+    width: 80%;
+  }
 `;
 const Paragraph = styled.p`
   font-size: 2rem;
@@ -153,6 +157,17 @@ const Input = styled.input`
     font-size: 1.5rem;
     background: #10121b;
   }
+
+  @media screen and (max-width: 800px) {
+    width: 40rem;
+  }
+  @media screen and (max-width: 604px) {
+    width: 30rem;
+  }
+  @media screen and (max-width: 400px) {
+    width: 20rem;
+    font-size: 1.2rem;
+  }
 `;
 
 const Label = styled.label`
@@ -184,6 +199,16 @@ const TextArea = styled.textarea`
     top: 13px;
     font-size: 1.5rem;
     background: #10121b;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 40rem;
+  }
+  @media screen and (max-width: 604px) {
+    width: 30rem;
+  }
+  @media screen and (max-width: 400px) {
+    width: 20rem;
   }
 `;
 

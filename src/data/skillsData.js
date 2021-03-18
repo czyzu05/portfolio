@@ -23,7 +23,7 @@ export const skillsData = [
     icon: <SiJavascript />,
   },
   {
-    title: "CSS, SCSS",
+    title: "CSS",
     icon: <SiCss3 />,
   },
   {
@@ -35,7 +35,7 @@ export const skillsData = [
     icon: <SiBootstrap />,
   },
   {
-    title: "React Native",
+    title: "ReactNative",
     icon: <FaMobileAlt />,
   },
   {

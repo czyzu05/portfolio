@@ -35,7 +35,9 @@ const AboutMe = () => {
               <b>Languages</b> Polish, English
             </li>
           </ul>
-          <Button to='/CV-Damian-Czyz.pdf' target="_blank" download>Download CV</Button>
+          <Button to="/CV-Damian-Czyz.pdf" target="_blank" download>
+            Download CV
+          </Button>
         </Information>
       </MainSection>
     </SectionContainer>
@@ -48,6 +50,18 @@ const MainSection = styled.div`
 
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 805px) {
+    flex-direction: column;
+
+    img {
+      margin: 0 auto;
+      padding-bottom: 50px;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    margin-top: 10px;
+  }
 `;
 
 const Image = styled.img`
@@ -55,6 +69,11 @@ const Image = styled.img`
   width: 230px;
   height: 400px;
   border-radius: 10px;
+
+  @media screen and (max-width: 300px) {
+    width: 170px;
+    height: 250px;
+  }
 `;
 const Information = styled.div`
   flex: 10;
@@ -97,6 +116,14 @@ const Information = styled.div`
         }
       }
     }
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 1.3rem;
+    padding-left: 0px;
   }
 `;
 

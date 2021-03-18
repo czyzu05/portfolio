@@ -18,6 +18,14 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 800px) {
+    margin-top: 3rem;
+  }
+  @media screen and (max-width: 400px) {
+    margin-top: 1.4rem;
+    justify-content: center;
+  }
 `;
 
 export default Certificates;

@@ -27,5 +27,12 @@ const MainSection = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 840px) {
+    justify-content: center;
+  }
+  @media screen and (max-width: 540px) {
+    margin-top: 0px;
+  }
 `;
 export default Projects;

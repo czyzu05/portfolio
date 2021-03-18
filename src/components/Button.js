@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Button = styled(Link)`
@@ -39,6 +39,16 @@ const Button = styled(Link)`
 
   @media screen and (max-width: 600px) {
     padding: 15px;
+    width: 17rem;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 1rem;
+    width: 15rem;
+  }
+  @media screen and (max-width: 300px) {
+    padding: 15px;
+    width: 12rem;
+    font-size: 0.8rem;
   }
 `;
 

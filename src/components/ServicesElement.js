@@ -22,6 +22,17 @@ const Wrapper = styled.div`
   &:hover {
     border-top: 4px solid #037fff;
   }
+
+  @media screen and (max-width: 805px) {
+    flex-basis: 45%;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 600px) {
+    flex-basis: 80%;
+  }
+  @media screen and (max-width: 450px) {
+    flex-basis: 100%;
+  }
 `;
 const Icon = styled.div`
   padding: 20px;
@@ -34,11 +45,19 @@ const Title = styled.h3`
   padding-left: 20px;
   font-size: 2.3rem;
   font-weight: 400;
+
+  @media screen and (max-width: 805px) {
+    font-size: 1.8rem;
+  }
 `;
 const Description = styled.p`
   color: #a4acc4;
   text-align: justify;
   padding: 18px 20px;
+
+  @media screen and (max-width: 805px) {
+    font-size: 1.3rem;
+  }
 `;
 
 export default ServicesElement;
