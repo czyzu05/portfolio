@@ -25,7 +25,7 @@ const MainSection = styled.div`
   width: 100%;
   margin-top: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 `;
 export default Projects;
