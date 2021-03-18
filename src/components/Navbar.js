@@ -4,7 +4,7 @@ import { menuData } from "../data/menuData";
 import styled from "styled-components";
 import avatar from "../images/avatar.png";
 
-const Navbar = ({ isOpen }) => {
+const Navbar = ({ isOpen, toggle }) => {
   return (
     <Nav isOpen={isOpen}>
       <NavContainer>
@@ -14,7 +14,7 @@ const Navbar = ({ isOpen }) => {
 
         <NavMenuContainer>
           {menuData.map((item, index) => (
-            <NavMenuLink to={item.path} exact key={index}>
+            <NavMenuLink to={item.path} exact key={index} onClick={toggle}>
               {item.title}
             </NavMenuLink>
           ))}

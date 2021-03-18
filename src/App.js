@@ -19,7 +19,7 @@ const App = () => {
     <BrowserRouter>
       <div className="app">
         <HamburgerMenu toggle={toggle} isOpen={isOpen} />
-        <Navbar isOpen={isOpen} />
+        <Navbar isOpen={isOpen} toggle={toggle} />
         <Switch>
           <Route exact path="/">
             <Home />
