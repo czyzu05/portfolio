@@ -4,21 +4,21 @@ import { HiOutlineCode } from "react-icons/hi";
 
 export const servicesData = [
   {
-    title: "Web Design",
+    title: "Responsive Web Design",
     icon: <BiPalette />,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor lorem id leo pulvinar tincidunt eget ut augue.",
+      "Nowadays creating User-Friendly interface for all kinds of devices or screen size is very important. I am familiar with the Mobile-First approach.",
   },
   {
     title: "Web Development",
     icon: <HiOutlineCode />,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor lorem id leo pulvinar tincidunt eget ut augue.",
+      "Currently, most of my projects use technologies like JavaScript, React, Redux, HTML and CSS",
   },
   {
     title: "Mobile Applications",
     icon: <FaMobileAlt />,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor lorem id leo pulvinar tincidunt eget ut augue.",
+      "I also create an application using the native version of React - React Native, customized for Android and iOS",
   },
 ];

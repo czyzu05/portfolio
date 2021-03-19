@@ -24,12 +24,17 @@ const Wrapper = styled.div`
     justify-content: center;
     width: 60%;
     margin: 50px;
+    padding-left: 0px;
   }
   @media screen and (max-width: 850px) {
     width: 80%;
   }
   @media screen and (max-width: 620px) {
+    padding-left: 2rem;
     width: 100%;
+  }
+  @media screen and (max-width: 380px) {
+    padding-left: 1rem;
   }
 `;
 

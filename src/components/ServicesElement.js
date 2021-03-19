@@ -46,6 +46,13 @@ const Title = styled.h3`
   font-size: 2.3rem;
   font-weight: 400;
 
+  @media screen and (max-width: 1420px) {
+    font-size: 1.9rem;
+  }
+  @media screen and (max-width: 1210px) {
+    font-size: 1.8rem;
+  }
+
   @media screen and (max-width: 805px) {
     font-size: 1.8rem;
   }
@@ -54,6 +61,17 @@ const Description = styled.p`
   color: #a4acc4;
   text-align: justify;
   padding: 18px 20px;
+  line-height: 1.4;
+
+  @media screen and (max-width: 1420px) {
+    font-size: 1.3rem;
+  }
+  @media screen and (max-width: 1210px) {
+    padding: 10px 20px;
+  }
+  @media screen and (max-width: 1105px) {
+    font-size: 1.3rem;
+  }
 
   @media screen and (max-width: 805px) {
     font-size: 1.3rem;

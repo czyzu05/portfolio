@@ -16,10 +16,12 @@ const AboutMe = () => {
             I am <span>Damian Czyż</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi
-            enim, vestibulum tincidunt scelerisque at, malesuada vitae diam. Sed
-            sed consectetur augue. Quisque lectus lacus, sagittis luctus urna
-            in, ornare interdum leo.
+            I am last-year student of Engeenering studies in IT and Econometrics.
+            Right now my main goal is to find a job
+            that will give me an opportunity to deepen and improve my programming skills.
+            Mainly I want to focus on learning JavaScript with <span style={{color: '#037FFF'}}>React</span>.
+            Also, I put a lot of work to write a clear and semantically correct code.
+            I always try my best to make good user interface with the best user experience.
           </p>
           <ul>
             <li>

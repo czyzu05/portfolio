@@ -16,8 +16,8 @@ const Home = () => {
       <SubTitle>
         <Typed
           strings={[
-            "I am a front-end web developer",
-            "I make Single Page Applications in React",
+            "I am a Front-End Web Developer",
+            "I create Single Page Applications in React",
             "Also programming in React Native",
           ]}
           typeSpeed={40}

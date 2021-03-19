@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   @media screen and (max-width: 1400px) {
     margin-top: 20px;
   }
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 380px) {
     flex-direction: column;
     justify-content: center;
   }
@@ -54,7 +54,7 @@ const Information = styled.div`
   flex-direction: column;
   padding-left: 25px;
 
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 380px) {
     padding: 0px;
     align-items: center;
     margin-top: 10px;
