@@ -7,12 +7,11 @@ import { timelineData } from "../data/timelineData";
 import "react-vertical-timeline-component/style.min.css";
 
 const Timeline = () => {
-
   const styles = {
-    fontSize: '1.5rem',
+    fontSize: "1.5rem",
     color: "#fff",
-    fontWeight: 400
-  }
+    fontWeight: 400,
+  };
 
   return (
     <VerticalTimeline>
@@ -22,11 +21,12 @@ const Timeline = () => {
           date={element.date}
           iconStyle={{ backgroundColor: "transparent" }}
         >
-          <h2 style={styles}>
-            {element.title}
-          </h2>
+          <h2 style={styles}>{element.title}</h2>
           <p style={{ fontSize: "1.3rem" }}>{element.description}</p>
           <p style={{ fontSize: "1.3rem" }}>{element.addition}</p>
+          {element.spec ? (
+            <p style={{ fontSize: "1.3rem" }}>{element.spec}</p>
+          ) : null}
         </VerticalTimelineElement>
       ))}
     </VerticalTimeline>

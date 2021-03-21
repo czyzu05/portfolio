@@ -16,12 +16,10 @@ const AboutMe = () => {
             I am <span>Damian Czyż</span>
           </h2>
           <p>
-            I am last-year student of Engeenering studies in IT and Econometrics.
-            Right now my main goal is to find a job
-            that will give me an opportunity to deepen and improve my programming skills.
-            Mainly I want to focus on learning JavaScript with <span style={{color: '#037FFF'}}>React</span>.
-            Also, I put a lot of work to write a clear and semantically correct code.
-            I always try my best to make good user interface with the best user experience.
+            I am a last-year student of IT and Econometrics studies.
+            My main goal is to find an opportunity which gives me a chance to delve further into a subject of computer science and
+            enhance my knowlege in JavaScript with <span style={{color: '#037FFF'}}>React</span>.
+            By creating a clear and semantically correct code, I always try to design and implement a good user interface which provides the best user experience.
           </p>
           <ul>
             <li>
