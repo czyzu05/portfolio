@@ -1,7 +1,7 @@
 # Portfolio SPA
 
-Created with React and styled components <3
+Portfolio website created using React and styled components.
 
 ### Live
 
-Link
+[Link](https://www.google.com)
