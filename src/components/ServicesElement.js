@@ -13,7 +13,7 @@ const ServicesElement = ({ title, icon, description }) => {
 
 const Wrapper = styled.div`
   width: 30%;
-  height: 250px;
+  height: 285px;
   background-color: #191d2b;
   border: 1px solid #2e344e;
   border-top: 4px solid #2e344e;
@@ -27,15 +27,21 @@ const Wrapper = styled.div`
     flex-basis: 45%;
     margin-top: 20px;
   }
+  @media screen and (max-width: 631px) {
+    flex-basis: 60%;
+    height: 250px;
+  }
   @media screen and (max-width: 600px) {
     flex-basis: 80%;
   }
   @media screen and (max-width: 450px) {
     flex-basis: 100%;
+    height: 280px;
   }
 `;
 const Icon = styled.div`
   padding: 20px;
+  padding-bottom: 5px;
   color: #037fff;
   font-size: 4rem;
 `;
@@ -64,7 +70,7 @@ const Description = styled.p`
   line-height: 1.4;
 
   @media screen and (max-width: 1420px) {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   @media screen and (max-width: 1210px) {
     padding: 10px 20px;

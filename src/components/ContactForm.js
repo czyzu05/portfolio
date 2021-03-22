@@ -21,8 +21,7 @@ const ContactForm = () => {
         "user_sldiMKMrLNLyTYvBftFn7"
       )
       .then(
-        (result) => {
-          console.log(result);
+        () => {
           setName("");
           setEmail("");
           setSubject("");
@@ -96,7 +95,7 @@ const ContactForm = () => {
             <Placeholder>Enter Your Subject</Placeholder>
           </Label>
           <Label>
-            <TextArea value={msg} onChange={handleInputMsg} name="message" />
+            <TextArea value={msg} onChange={handleInputMsg} name="message" required />
             <Placeholder>Enter Your Message</Placeholder>
           </Label>
           <SubmitButton type="submit">Send Mail</SubmitButton>

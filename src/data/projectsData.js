@@ -1,6 +1,7 @@
 import weather from "../images/weather-app.jpg";
 import ipAddressTracker from "../images/ip-address-tracker.jpg";
 import contactBook from "../images/contact-book.PNG";
+import exchangeRates from '../images/exchange-rates.PNG'
 export const projectsData = [
   {
     title: "Weather App",
@@ -19,11 +20,11 @@ export const projectsData = [
     path: "https://github.com/czyzu05/ip-address-tracker",
   },
   {
-    title: "Exchange Rate App",
+    title: "Exchange Rates App",
     description:
       "Application for converting foreign currencies into polish currency (PLN). Actual currencies are fetched from NBP API",
     technologies: "React, React Hooks, CSS",
-    img: contactBook,
+    img: exchangeRates,
     path: "https://github.com/czyzu05/exchange-rates",
   },
   {

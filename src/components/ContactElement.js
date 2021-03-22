@@ -67,7 +67,7 @@ const Header = styled.h4`
   padding-bottom: 10px;
 
   @media screen and (max-width: 430px) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 `;
 
@@ -78,7 +78,7 @@ const Value = styled.p`
     font-size: 1.1rem;
   }
   @media screen and (max-width: 430px) {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
 `;
 

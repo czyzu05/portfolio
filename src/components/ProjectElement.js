@@ -27,25 +27,32 @@ const Wrapper = styled.div`
   border: 1px solid #2e344e;
   padding: 25px;
 
-  @media screen and (max-width: 1450px) {
+  @media screen and (max-width: 1400px) {
     padding: 25px;
     flex-basis: calc(53% - 100px);
+    height: 64rem;
   }
-  @media screen and (max-width: 840px) {
-    padding: 35px;
-    flex-basis: calc(70% - 100px);
+  @media screen and (max-width: 895px) {
+    padding: 25px;
+    margin: 15px auto;
+    flex-basis: calc(77% - 100px);
   }
   @media screen and (max-width: 770px) {
     padding: 35px;
     flex-basis: 80%;
   }
-  @media screen and (max-width: 590px) {
+  @media screen and (max-width: 603px) {
     padding: 25px;
     flex-basis: 90%;
+    height: 66rem;
   }
   @media screen and (max-width: 450px) {
     padding: 15px;
     flex-basis: 100%;
+    height: 60rem;
+  }
+  @media screen and (max-width: 360px) {
+    height: 50rem;
   }
 `;
 
@@ -60,6 +67,12 @@ const RepositoryLink = styled(Button)`
   width: 16rem;
   padding: 20px 27px;
   font-size: 1.2rem;
+
+  @media screen and (max-width: 350px) {
+    width: 12rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
 `;
 
 const Image = styled.img`
@@ -73,8 +86,11 @@ const Image = styled.img`
     height: 20rem;
   }
 
-  @media screen and (max-width: 850px) {
-    width: 100%;
+  @media screen and (max-width: 890px) {
+    width: 77%;
+  }
+  @media screen and (max-width: 605px) {
+    height: 16.5rem;
   }
   @media screen and (max-width: 400px) {
     height: 15rem;
@@ -103,7 +119,7 @@ const Description = styled.p`
     font-size: 1.4rem;
   }
   @media screen and (max-width: 365px) {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 `;
 
@@ -114,7 +130,7 @@ const Technologies = styled.p`
     font-size: 1.4rem;
   }
   @media screen and (max-width: 365px) {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 `;
 
