@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const SkillElement = ({ title, icon }) => {
+const SkillElement = ({ title, icon, color }) => {
   return (
-    <Wrapper>
+    <Wrapper color={color}>
       <Icon>{icon}</Icon>
       <Text>{title}</Text>
     </Wrapper>
@@ -33,54 +33,9 @@ const Wrapper = styled.div`
     padding: 10px;
   }
 
-  &:nth-child(1):hover {
+  &:hover {
     div {
-      color: #037fff;
-    }
-  }
-  &:nth-child(2):hover {
-    div {
-      color: #764abc;
-    }
-  }
-  &:nth-child(3):hover {
-    div {
-      color: #f0db4f;
-    }
-  }
-  &:nth-child(4):hover {
-    div {
-      color: #2965f1;
-    }
-  }
-  &:nth-child(5):hover {
-    div {
-      color: #e34c26;
-    }
-  }
-  &:nth-child(6):hover {
-    div {
-      color: #602c50;
-    }
-  }
-  &:nth-child(7):hover {
-    div {
-      color: #037fff;
-    }
-  }
-  &:nth-child(8):hover {
-    div {
-      color: #007acc;
-    }
-  }
-  &:nth-child(9):hover {
-    div {
-      color: #000;
-    }
-  }
-  &:nth-child(10):hover {
-    div {
-      color: #fff;
+      color: ${({ color }) => color};
     }
   }
 `;

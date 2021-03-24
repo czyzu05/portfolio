@@ -95,7 +95,12 @@ const ContactForm = () => {
             <Placeholder>Enter Your Subject</Placeholder>
           </Label>
           <Label>
-            <TextArea value={msg} onChange={handleInputMsg} name="message" required />
+            <TextArea
+              value={msg}
+              onChange={handleInputMsg}
+              name="message"
+              required
+            />
             <Placeholder>Enter Your Message</Placeholder>
           </Label>
           <SubmitButton type="submit">Send Mail</SubmitButton>
@@ -194,6 +199,7 @@ const TextArea = styled.textarea`
   color: #a4acc4;
   font-size: 2rem;
 
+  &:focus + span,
   &:valid + span {
     top: 13px;
     font-size: 1.5rem;
