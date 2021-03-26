@@ -7,6 +7,7 @@ import HamburgerMenu from "./components/HamburgerMenu";
 import Contact from "./views/Contact";
 import Projects from "./views/Projects";
 import Resume from "./views/Resume";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +19,10 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="app">
+        <ScrollToTop />
         <HamburgerMenu toggle={toggle} isOpen={isOpen} />
         <Navbar isOpen={isOpen} toggle={toggle} />
+
         <Switch>
           <Route exact path="/">
             <Home />
