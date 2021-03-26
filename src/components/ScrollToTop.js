@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { withRouter } from "react-router-dom";
+import animateScrollTo from "animated-scroll-to";
 
 const ScrollToTop = ({ history }) => {
   useEffect(() => {
     const unlisten = history.listen(() => {
-      window.scrollTo(0, 0);
+      animateScrollTo(0);
     });
     return () => {
       unlisten();
