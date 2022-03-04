@@ -1,5 +1,12 @@
 export const timelineData = [
   {
+    id: 0,
+    title: "ACCENTURE",
+    description: "Software Engineer",
+    date: "June 2021 - present",
+    addition: "I'm mainly working on the front-end part of applications, more details about projects in which I participated is described in Experience tab",
+  },
+  {
     id: 1,
     title: "COLLEGE OF ECONOMICS AND COMPUTER SCIENCE IN CRACOW",
     description: "Engineering Studies",

@@ -14,7 +14,7 @@ const Projects = () => {
   return (
     <Container>
       <SectionContainer>
-        <Title>Projects</Title>
+        <Title>Experience</Title>
         <MainSection>{projects}</MainSection>
       </SectionContainer>
     </Container>

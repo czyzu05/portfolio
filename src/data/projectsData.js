@@ -1,38 +1,34 @@
 import weather from "../images/weather-app.jpg";
-import ipAddressTracker from "../images/ip-address-tracker.jpg";
-import contactBook from "../images/contact-book.PNG";
-import exchangeRates from '../images/exchange-rates.PNG'
+import leadDistribution from "../images/leadDistribution.jpg";
+import votingApp from "../images/votingApp.jpg";
+import billingSystem from '../images/billingSystem.png'
 export const projectsData = [
+  {
+    title: "BILLING SYSTEM",
+    description:
+      "System for managing a mobile phone subscriptions, installment plan and billings.",
+    technologies: "React, Redux, Redux Toolkit, Java Spring Boot, PL/SQL",
+    img: billingSystem,
+  },
+  {
+    title: "LEAD DISTRIBUTION PLATFORM",
+    description:
+      "Lead and user management platform which contains statistical data and engine configurator.",
+    technologies: "React, React Hooks, Azure, SCSS" ,
+    img: leadDistribution,
+  },
+  {
+    title: "VOTING APPLICATION",
+    description:
+      "Application with several voting cycles for the best universities in Italy. Collecting votes and creating rankings, integrated with CMS",
+    technologies: "React, React Context, Drupal, Swagger",
+    img: votingApp,
+  },
   {
     title: "Weather App",
     description:
       "Developed a mobile application designed during the international student workshops organized by Facebook, allowing the user to check current and long-term weather.",
     technologies: "React Native, React Hooks, Context API, REST API",
     img: weather,
-    path: "https://github.com/czyzu05/weather-app",
-  },
-  {
-    title: "IP Address Tracker",
-    description:
-      "Created an interactive web application which fetches information about given address IP and displays associated geolocation.",
-    technologies: "React, React Hooks, REST APIs",
-    img: ipAddressTracker,
-    path: "https://github.com/czyzu05/ip-address-tracker",
-  },
-  {
-    title: "Exchange Rates App",
-    description:
-      "Application for converting foreign currencies into polish currency (PLN). Actual currencies are fetched from NBP API",
-    technologies: "React, React Hooks, CSS",
-    img: exchangeRates,
-    path: "https://github.com/czyzu05/exchange-rates",
-  },
-  {
-    title: "Contact Book",
-    description:
-      "Designed and implemented CRUD app called Contact Book allowing the user to store and manage contacts.",
-    technologies: "React, Redux, React Router, React Hooks",
-    img: contactBook,
-    path: "https://github.com/czyzu05/contact-book",
   },
 ];

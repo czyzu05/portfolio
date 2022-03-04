@@ -17,7 +17,7 @@ const AboutMe = () => {
           </h2>
           <p>
             I am a last-year student of IT and Econometrics studies.
-            My main goal is to find an opportunity which gives me a chance to delve further into a subject of computer science and
+            Building quality websites and applications gives me a chance to delve further into a subject of computer science and
             enhance my knowlege in JavaScript with <span style={{color: '#037FFF'}}>React</span>.
             By creating a clear and semantically correct code, I always try to design and implement a good user interface which provides the best user experience.
           </p>
@@ -26,7 +26,7 @@ const AboutMe = () => {
               <b>My name</b> Damian Czyż
             </li>
             <li>
-              <b>Age</b> 22 Years
+              <b>Age</b> 23 Years
             </li>
             <li>
               <b>Location</b> Cracow, Poland

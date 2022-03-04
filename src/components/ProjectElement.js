@@ -11,9 +11,6 @@ const ProjectElement = ({ title, description, technologies, img, path }) => {
         <Description>{description}</Description>
         <Title>Used Technologies</Title>
         <Technologies>{technologies}</Technologies>
-        <RepositoryLink to={{ pathname: `${path}` }} target="_blank">
-          REPOSITORY
-        </RepositoryLink>
       </InformationContainer>
     </Wrapper>
   );
@@ -61,18 +58,6 @@ const InformationContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
-
-const RepositoryLink = styled(Button)`
-  width: 16rem;
-  padding: 20px 27px;
-  font-size: 1.2rem;
-
-  @media screen and (max-width: 350px) {
-    width: 12rem;
-    padding: 10px 20px;
-    font-size: 1rem;
-  }
 `;
 
 const Image = styled.img`

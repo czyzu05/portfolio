@@ -18,7 +18,7 @@ const Resume = () => {
       <SectionContainer>
         <Title>My skills</Title>
         <SkillsSection>{skills}</SkillsSection>
-        <Title>Education</Title>
+        <Title>Timeline</Title>
         <TimelineContainer>
           <Timeline />
         </TimelineContainer>
