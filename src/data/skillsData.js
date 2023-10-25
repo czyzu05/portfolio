@@ -4,9 +4,9 @@ import {
   SiCss3,
   SiJavascript,
   SiHtml5,
-  SiBootstrap,
   SiGithub,
   SiTypescript,
+  SiNextdotjs
 } from "react-icons/si";
 
 export const skillsData = [
@@ -36,9 +36,9 @@ export const skillsData = [
     color: "#e34c26",
   },
   {
-    title: "Bootstrap",
-    icon: <SiBootstrap />,
-    color: "#602c50",
+    title: "Next.js",
+    icon: <SiNextdotjs />,
+    color: "#000",
   },
   {
     title: "ReactNative",

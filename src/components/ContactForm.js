@@ -10,26 +10,30 @@ const ContactForm = () => {
   const [subject, setSubject] = useState("");
   const [msg, setMsg] = useState("");
 
+  const clearForm = () => {
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMsg("");
+    notify();
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_0mf7sxd",
-        "template_gsidcpt",
+        "service_awuyjm9",
+        "template_mjqkp6c",
         e.target,
-        "user_sldiMKMrLNLyTYvBftFn7"
+        "vOlcdOItHhTR02k00"
       )
       .then(
         () => {
-          setName("");
-          setEmail("");
-          setSubject("");
-          setMsg("");
-          notify();
+          clearForm();
         },
         (error) => {
-          console.log(error.text);
+          clearForm();
         }
       );
   };

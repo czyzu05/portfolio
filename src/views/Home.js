@@ -16,12 +16,12 @@ const Home = () => {
       <SubTitle>
         <Typed
           strings={[
-            "I am a Front-End Web Developer",
-            "I create Single Page Applications in React",
-            "Also programming in React Native",
+            "Enthusiastic Front-End Developer specializing in React and Next.js",
+            "2+ years of commercial experience",
+            "Familiar with mobile development in React Native",
           ]}
           typeSpeed={40}
-          backSpeed={60}
+          backSpeed={80}
           backDelay={2000}
           loop
         />

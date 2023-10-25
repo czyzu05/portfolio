@@ -21,7 +21,7 @@ const Navbar = ({ isOpen, toggle }) => {
         </NavMenuContainer>
 
         <NavFooterContainer>
-          <CopyrightInfo>&copy; 2021 Damian Czyż</CopyrightInfo>
+          <CopyrightInfo>&copy; 2023 Damian Czyż</CopyrightInfo>
         </NavFooterContainer>
       </NavContainer>
     </Nav>

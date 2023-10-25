@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "./Button";
 
-const ProjectElement = ({ title, description, technologies, img, path }) => {
+const ProjectElement = ({ title, description, technologies, img, link }) => {
   return (
     <Wrapper>
       <InformationContainer>
@@ -11,6 +10,14 @@ const ProjectElement = ({ title, description, technologies, img, path }) => {
         <Description>{description}</Description>
         <Title>Used Technologies</Title>
         <Technologies>{technologies}</Technologies>
+        {link ? (
+        <Link href={link} target="_blank">Link</Link>
+        ) : (
+          <>
+            <Title style={{paddingTop: "18px"}}>Private Client Project</Title>
+            <Description>This project is confidential and I cannot provide a public link or display screenshots. For more details about my work, please contact me directly.</Description>
+          </>
+        )}
       </InformationContainer>
     </Wrapper>
   );
@@ -20,14 +27,20 @@ const Wrapper = styled.div`
   flex-basis: calc(50% - 90px);
   text-align: center;
   margin: 30px;
-  height: 57rem;
+  height: 60rem;
   border: 1px solid #2e344e;
   padding: 25px;
+
+  @media screen and (max-width: 1600px) {
+    padding: 25px;
+    flex-basis: calc(53% - 100px);
+    height: 75rem;
+  }
 
   @media screen and (max-width: 1400px) {
     padding: 25px;
     flex-basis: calc(53% - 100px);
-    height: 64rem;
+    height: 75rem;
   }
   @media screen and (max-width: 895px) {
     padding: 25px;
@@ -41,12 +54,12 @@ const Wrapper = styled.div`
   @media screen and (max-width: 603px) {
     padding: 25px;
     flex-basis: 90%;
-    height: 66rem;
+    height: 70rem;
   }
   @media screen and (max-width: 450px) {
     padding: 15px;
     flex-basis: 100%;
-    height: 60rem;
+    height: 65rem;
   }
   @media screen and (max-width: 360px) {
     height: 50rem;
@@ -88,6 +101,7 @@ const Image = styled.img`
 const Title = styled.h2`
   color: #fff;
   font-weight: 400;
+  letter-spacing: 0.6px;
 
   @media screen and (max-width: 450px) {
     font-size: 1.8rem;
@@ -118,5 +132,17 @@ const Technologies = styled.p`
     font-size: 1.3rem;
   }
 `;
+
+const Link = styled.a`
+text-decoration: none;
+color: #037FFF;
+padding-top: 26px;
+font-size: 20px;
+
+&:hover {
+  cursor: pointer;
+  color: #046ad4;
+}
+`
 
 export default ProjectElement;

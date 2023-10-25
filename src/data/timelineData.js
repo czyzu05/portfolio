@@ -2,17 +2,17 @@ export const timelineData = [
   {
     id: 0,
     title: "ACCENTURE",
-    description: "Software Engineer",
+    description: "Front-End Developer",
     date: "June 2021 - present",
-    addition: "I'm mainly working on the front-end part of applications, more details about projects in which I participated is described in Experience tab",
+    addition: "Building responsive and dynamic web applications using React, TypeScript, Redux, and related libraries. Projects are described in the Experience tab",
   },
   {
     id: 1,
     title: "COLLEGE OF ECONOMICS AND COMPUTER SCIENCE IN CRACOW",
-    description: "Engineering Studies",
-    date: "October 2018 - present",
+    description: "Bachelor of Engineering in Computer Science and Econometrics",
+    date: "October 2018 - May 2022",
     addition: "Profile: IT and Econometrics",
-    spec: "Specialization: Mobile and Web programming",
+    spec: "Specialization: Web and Mobile Applications Programming",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ export const timelineData = [
     description: "International Technical school internships in Portsmouth(UK)",
     date: "February 2017 - March 2017",
     addition:
-      "I was responsible for creating pages in WordPress, also make changes to existing projects",
+      "Managing WordPress websites, including customization, content management, and troubleshooting.",
   },
   {
     id: 3,

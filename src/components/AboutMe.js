@@ -16,17 +16,15 @@ const AboutMe = () => {
             I am <span>Damian Czyż</span>
           </h2>
           <p>
-            I am a last-year student of IT and Econometrics studies.
-            Building quality websites and applications gives me a chance to delve further into a subject of computer science and
-            enhance my knowlege in JavaScript with <span style={{color: '#037FFF'}}>React</span>.
-            By creating a clear and semantically correct code, I always try to design and implement a good user interface which provides the best user experience.
+            Enthusiastic and dedicated Front-End Developer with over 2 years of hands-on experience in crafting interactive and dynamic web applications using <span style={{color: '#037FFF'}}>React</span> and its entire ecosystem.
+            By creating a clear and semantically correct code, I always try to design and implement a good user interface which not only meet but exceed user's expectations.
           </p>
           <ul>
             <li>
               <b>My name</b> Damian Czyż
             </li>
             <li>
-              <b>Age</b> 23 Years
+              <b>Age</b> 25 Years
             </li>
             <li>
               <b>Location</b> Cracow, Poland
