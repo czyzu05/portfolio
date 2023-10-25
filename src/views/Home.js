@@ -1,15 +1,25 @@
-import React from "react";
+import React, {useCallback} from "react";
 import styled from "styled-components";
-import Particles from "react-particles-js";
+import Particles from "react-particles";
 import Typed from "react-typed";
 import Button from "../components/Button";
 import Container from "../components/Container";
 import { particlesConfig } from "../config/particle-config";
+import { loadSlim } from "tsparticles-slim";
 
 const Home = () => {
+  const particlesInit = useCallback(async engine => {
+    await loadSlim(engine);
+}, []);
+
+const particlesLoaded = useCallback(async container => {
+    await console.log(container);
+}, []);
+
   return (
     <HomeContainer>
-      <Particles params={particlesConfig} />
+       <Particles id="tsparticles" init={particlesInit} loaded={particlesLoaded} options={particlesConfig}
+/>
       <Title>
         Hi, I am <span>Damian Czyż</span>
       </Title>
