@@ -59,10 +59,10 @@ const Wrapper = styled.div`
   @media screen and (max-width: 450px) {
     padding: 15px;
     flex-basis: 100%;
-    height: 65rem;
+    height: fit-content;
   }
   @media screen and (max-width: 360px) {
-    height: 50rem;
+    height: fit-content;
   }
 `;
 
